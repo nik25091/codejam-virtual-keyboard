@@ -1,0 +1,131 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(253, 226, 190);
+    font-size: 20px;
+}
+
+textarea {
+    height: 300px;
+    width: 900px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.row {
+    width: 740px;
+    height: 40px;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(46, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-row-gap: 10px;
+    grid-column-end: span 3;
+
+}
+
+.wrapper div:nth-child(1) .col {
+    margin-left: 5px;
+    height: 100%;
+    grid-column-end: span 3;
+    background-color: rgb(122, 122, 122);
+    border-radius: 5px;
+}
+
+.wrapper div:nth-child(1) .col:last-child {
+    grid-column-end: span 7;
+    background-color: rgb(68, 68, 68);
+    color: white;
+}
+
+.wrapper div:nth-child(2) .col {
+    margin-left: 5px;
+    height: 100%;
+    grid-column-end: span 3;
+    background-color: rgb(122, 122, 122);
+    border-radius: 5px;
+}
+
+.wrapper div:nth-child(2) .col:nth-child(1) {
+    grid-column-end: span 4;
+    background-color: rgb(68, 68, 68);
+    color: white;
+}
+
+.wrapper div:nth-child(2) .col:last-child {
+    background-color: rgb(68, 68, 68);
+    color: white;
+}
+
+.wrapper div:nth-child(3) .col {
+    margin-left: 5px;
+    height: 100%;
+    grid-column-end: span 3;
+    background-color: rgb(122, 122, 122);
+    border-radius: 5px;
+}
+
+.wrapper div:nth-child(3) .col:last-child {
+    grid-column-end: span 6;
+    background-color: rgb(68, 68, 68);
+    color: white;
+}
+
+.wrapper div:nth-child(3) .col:nth-child(1) {
+    grid-column-end: span 7;
+    background-color: rgb(68, 68, 68);
+    color: white;
+}
+
+.wrapper div:nth-child(4) .col {
+    margin-left: 5px;
+    height: 100%;
+    grid-column-end: span 3;
+    background-color: rgb(122, 122, 122);
+    border-radius: 5px;
+}
+
+.wrapper div:nth-child(4) .col:last-child {
+    grid-column-end: span 6;
+    background-color: rgb(68, 68, 68);
+    color: white;
+}
+
+.wrapper div:nth-child(4) .col:nth-child(1) {
+    grid-column-end: span 7;
+    background-color: rgb(68, 68, 68);
+    color: white;
+}
+
+.wrapper div:nth-child(4) .col:nth-child(12) {
+    background-color: rgb(68, 68, 68);
+    color: white;
+}
+
+.wrapper div:nth-child(5) .col {
+    margin-left: 5px;
+    height: 100%;
+    grid-column-end: span 3;
+    background-color: rgb(68, 68, 68);
+    color: white;
+    border-radius: 5px;
+}
+
+.wrapper div:nth-child(5) .col:nth-child(4) {
+    grid-column-end: span 22;
+    background-color: rgb(122, 122, 122);
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px rgb(139, 139, 139);
+    font-size: 16px;
+}
+
+.col:hover {
+    background-color: rgb(189, 82, 82) !important;
+}
