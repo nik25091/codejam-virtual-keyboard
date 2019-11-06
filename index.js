@@ -1,3 +1,4 @@
+
 let mainElement = document.querySelector('body');
 let textarea = document.createElement('textarea');
 textarea.id = 'textarea';
@@ -34,12 +35,6 @@ let col;
                ['shift', 'Я', 'Ч', 'С', 'М', 'И', 'Т', 'Ь', 'Б', 'Ю', '.', '&#8593', 'shift'],
                ['ctrl', 'win', 'alt', 'space', 'alt', '&#8592', '&#8595', '&#8594', 'ctrl']]; 
                
-               
-               document.addEventListener('keydown', function(event) {
-                if (event.code == 'altKey' && event.code == 'ctrlKey') {
-                  en = ru;
-                }
-              });
             
 
 
@@ -142,38 +137,3 @@ for (let j = 0; j < 9; j++) {
     };
     newRow.append(col);
 }
-
-
-
-
-// addEventListener("click", function() {
-//     textarea.focus();x
-//     document.getElementById('textarea').innerHTML += document.querySelector('div > .col').textContent;
-    
-//   });
-
-// var button = document.querySelectorAll('button');
-// for (var i = 0; i < button.length; i++) {
-// button[i].addEventListener('click',  function() {
-// document.getElementById('textarea').innerHTML += document.querySelector('button').textContent;
-// }
-// );
-// }
-
-// if (numbers[0][j] === 'Backspace') {
-//     textarea.innerHTML = textarea.innerHTML.substring(0, textarea.innerHTML.length - 1)
-//   } else {
-//   textarea.innerHTML += numbers[0][j]        
-//   }
-
-// col.onclick = function(e) {
-//     if (en.length > 1) {
-//             textarea.innerHTML = textarea.innerHTML.substring(0, textarea.innerHTML.length - 1)  
-//     } else {
-//         for (let i = 0; i < 5; i++) {
-//             for (let j = 0; j < 15; j++)
-//     textarea.innerHTML += en[i][j]
-//         }
-//     }
-// }
-
